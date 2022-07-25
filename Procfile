@@ -1,1 +1,1 @@
-web: ./build/install/Coin View/bin/Coin View
+web: ./build/install/coinview/bin/coinview
