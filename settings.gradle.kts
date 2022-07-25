@@ -1,0 +1,1 @@
+rootProject.name = "com.hackbyte.coin-view"
