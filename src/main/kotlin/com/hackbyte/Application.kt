@@ -17,6 +17,8 @@ fun main(args: Array<String>): Unit =
 @Suppress("unused") // application.conf references the main function. This annotation prevents the IDE from marking it as unused.
 fun Application.module() {
 
+    val log = environment.log
+    log.debug("ktor application started")
     startKoin {
         modules(
             db,
@@ -35,4 +37,5 @@ fun Application.module() {
     configureSerialization()
     configureSecurity(tokenConfig)
     configureRouting(tokenConfig)
+    log.debug("Application module initialized")
 }
